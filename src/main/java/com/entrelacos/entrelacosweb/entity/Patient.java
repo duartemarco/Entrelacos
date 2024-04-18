@@ -1,7 +1,10 @@
 package com.entrelacos.entrelacosweb.entity;
 
-import org.springframework.stereotype.Component;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Patient {
 
     private String name;
@@ -21,35 +24,8 @@ public class Patient {
         this.active = true;
     }
 
-    public String getName() {
-        return name;
+    public boolean isActive() {
+        return this.active;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
